@@ -2,7 +2,7 @@
 <html xmlns='http://www.w3.org/1999/xhtml' lang='' xml:lang=''>
 <head>
 	<meta charset='utf-8' />
-	<base href="https://cdn.jsdelivr.net/gh/Greenfenix414/rota-1file/index.html">
+	<!--ported by Greenfenix-->
 	<meta name='viewport' content='width=device-width, user-scalable=no' />
 	<title>ROTA: Bend Gravity</title>
 	<style type='text/css'>
@@ -136,7 +136,7 @@
 		</div>
 		<div id='status-notice' class='godot' style='display: none;'></div>
 	</div>
-	<script>const realFetch = window.fetch;
+<script>const realFetch = window.fetch;
 
 		function mergeFiles(fileParts) {
 			return new Promise((resolve, reject) => {
@@ -190,10 +190,10 @@
 	<script type='text/javascript' src='index.js'></script>
 	<script type='text/javascript'>//<![CDATA[
 
-		const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":50036352,"index.wasm":19721321},"focusCanvas":true,"gdnativeLibs":[]};
+		const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":50091440,"index.wasm":19721321},"focusCanvas":true,"gdnativeLibs":[]};
 		var engine = new Engine(GODOT_CONFIG);
 
-		function startGodot () {
+	function startGodot ()  {
 			const INDETERMINATE_STATUS_STEP_MS = 100;
 			var statusProgress = document.getElementById('status-progress');
 			var statusProgressInner = document.getElementById('status-progress-inner');
