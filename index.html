@@ -173,8 +173,8 @@
 			return parts;
 		}
 		Promise.all([
-			mergeFiles(getParts("https://cdn.jsdelivr.net/gh/Greenfenix414/rota-1file/index.pck", 1, 9)),
-			mergeFiles(getParts("https://cdn.jsdelivr.net/gh/Greenfenix414/rota-1file/index.wasm", 1, 9)),
+			mergeFiles(getParts("https://cdn.jsdelivr.net/gh/Greenfenix414/rota-1file/index.pck", 9)),
+			mergeFiles(getParts("https://cdn.jsdelivr.net/gh/Greenfenix414/rota-1file/index.wasm", 9)),
 		]).then(([pckUrl, wasmUrl]) => {
 			window.fetch = async function (url, ...args) {
 				if (url.endsWith("index.pck")) {
