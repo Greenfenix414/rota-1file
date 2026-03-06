@@ -112,6 +112,7 @@
 			padding: 4px 6px;
 			visibility: visible;
 		}
+
 	</style>
 <link id='-gd-engine-icon' rel='icon' type='image/png' href='index.icon.png' />
 <link rel='apple-touch-icon' href='index.apple-touch-icon.png'/>
@@ -173,8 +174,8 @@
 			return parts;
 		}
 		Promise.all([
-			mergeFiles(getParts("https://cdn.jsdelivr.net/gh/Greenfenix414/rota-1file/index.pck", 9)),
-			mergeFiles(getParts("https://cdn.jsdelivr.net/gh/Greenfenix414/rota-1file/index.wasm", 9)),
+			mergeFiles(getParts("https://cdn.jsdelivr.net/gh/Greenfenix414/rota-onefile/index.pck", 9)),
+			mergeFiles(getParts("https://cdn.jsdelivr.net/gh/Greenfenix414/rota-onefile/index.wasm", 9)),
 		]).then(([pckUrl, wasmUrl]) => {
 			window.fetch = async function (url, ...args) {
 				if (url.endsWith("index.pck")) {
